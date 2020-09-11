@@ -1,0 +1,10 @@
+read a
+if [ $a == N -o $a == n ];
+then
+    echo NO
+elif [ $a == y -o $a == Y ];
+then
+    echo YES
+else
+    exit 0
+fi
