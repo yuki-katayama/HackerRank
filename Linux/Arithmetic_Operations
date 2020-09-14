@@ -1,0 +1,3 @@
+read num
+echo $num | bc -l | xargs printf "%.3f"
+# -lをつける事で、四則演算以外も可能にする
