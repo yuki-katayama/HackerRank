@@ -1,0 +1,4 @@
+while read a
+do
+echo $a | cut -f2- -d" "
+done
