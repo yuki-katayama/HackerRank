@@ -1,10 +1,8 @@
-import sys
+# import sys
 
 
 S = input().strip()
-my_list = []
-for s in S:
-    try:
-        my_list.append(int(s))
-    except:
-        print("Bad String")
+try:
+    print(int(S))
+except:
+    print("Bad String")
