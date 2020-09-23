@@ -9,7 +9,6 @@ for i, param in enumerate(b):
     else:
         count = 1
     mem = b[i]
-    # if((mem_list[i + 1] == False) or (mem_list[i] != mem_list[i + 1])):
     mem_list.append(count)
 
 print(max(mem_list))
