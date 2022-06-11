@@ -1,13 +1,15 @@
-read a
-read b
-read c
+main () {
+    read one
+    read two
+    read three
+    if [ $one -eq $two -a $two -eq $three -a $one -eq $three ]; then
+        echo "EQUILATERAL"
+    elif [ $one -eq $two -o $one -eq $three -o $two -eq $three ]; then
+        echo "ISOSCELES"
+    else
+        echo "SCALENE"
+    fi
+}
 
-if [ $a == $b -a $c == $b ]
-then
-    echo EQUILATERAL
-elif [ $a == $b -o $a == $c -o $b == $c ]
-then
-    echo ISOSCELES
-else
-    echo SCALENE
-fi
+main
+
